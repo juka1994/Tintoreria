@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="icono_entregar_58x58B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_entregar_58x58B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="top_cerrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\top_cerrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_importar_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_importar_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_recibir_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_recibir_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_inventario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_inventario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_menos_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_menos_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="time" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\time.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_sucursal_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_sucursal_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_motivosB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_motivosB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clientes_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clientes_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_tallas_ropa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_tallas_ropa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="articulos_bodega_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\articulos_bodega_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cortes_caja_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cortes_caja_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="top_maximizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\top_maximizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="operaciones_blanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\operaciones_blanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_depositos_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_depositos_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="compras_58x58B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\compras_58x58B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="not_alerta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\not-alerta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="not_ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\not-ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="regresar_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\regresar_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_iva" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_iva.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_caja_actual_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_caja_actual_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_pendiente_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_pendiente_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_configuracion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_configuracion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_procesar_58x58B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_procesar_58x58B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_cancelar_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_cancelar_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_unidades_medida" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_unidades_medida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usuarios_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usuarios_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_catalogos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_catalogos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_ocupaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_ocupaciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lavanderia_reparto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lavanderia_reparto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_credencialesB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_credencialesB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="documentos_pagar_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\documentos_pagar_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_guardar_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_guardar_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_Search_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Search-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="washing_machine_58px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\washing_machine_58px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_entregar_58x581" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_entregar_58x581.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_buscar_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_buscar_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barra_catalogos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barra_catalogos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_pagos_58x581" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_pagos_58x581.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="money_45px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\money_45px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_nuevo_producto_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_nuevo_producto_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pedidos_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pedidos_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_credencial_resetear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_credencial_resetear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_mayoreo_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_mayoreo_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_promociones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_promociones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancelaciones_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancelaciones_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="resultados_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resultados_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_agregar_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_agregar_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_motivos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_motivos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_aplicar_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_aplicar_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clientes_58x58B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clientes_58x58B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_nueva_ropa_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_nueva_ropa_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_cerrar_sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_cerrar_sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancelacion_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancelacion_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_ptintoreria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_ptintoreria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo150X150" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo150X150.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_pagos_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_pagos_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_imprimir_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_imprimir_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_familias" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_familias.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_colores_ropa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_colores_ropa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barra_inventario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barra_inventario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_equipos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_equipos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="almacen_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\almacen_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_mov_caja_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_mov_caja_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_prod_generico_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_prod_generico_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_reactivar_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_reactivar_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_suspender_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_suspender_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barra_stock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barra_stock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="develop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\develop.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="top_minimizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\top_minimizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="top_menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\top_menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barra_alerta_mini_amarilla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barra_alerta_mini_amarilla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_eliminar_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_eliminar_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_secciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_secciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_cerrarsesionB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_cerrarsesionB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="updates_45px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\updates_45px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_codigo_barra_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_codigo_barra_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DFFibras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\44x44\Fibras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_des_generico_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_des_generico_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_correo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_correo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="product_58px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\product_58px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StatusRed_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StatusRed_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_retiros_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_retiros_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ventas_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ventas_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_file_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_file_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_fILE_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete_fILE_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_procesar_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_procesar_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_pin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_pin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="water_58px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\water_58px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_productos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_productos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="prodictos_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prodictos_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_listo_44x44B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_listo_44x44B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_otroscargos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_otroscargos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="teams_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\teams_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Llegada_45px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Llegada_45px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Entrega_list_45px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Entrega_list_45px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="proveedores_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\proveedores_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="teams_50px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\teams_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barra_operaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barra_operaciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="promociones_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\promociones_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_enviar_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_enviar_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_retirar_caja_llena_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_retirar_caja_llena_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_empresa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_empresa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_Shopping_Bag_58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Shopping Bag-58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barra_configuracion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barra_configuracion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_activar_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_activar_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_exportar_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_exportar_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="atm_45px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\atm_45px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_listo_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_listo_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="closeBlack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\closeBlack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_detalle_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_detalle_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_abrir_caja_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_abrir_caja_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StatusGreen_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StatusGreen_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cambios_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cambios_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="retiro_45px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\retiro_45px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="caja_llena_45px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\caja_llena_45px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barra_alerta_mini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barra_alerta_mini.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barra_movil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barra_movil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_marca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_marca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_credencial_tipo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_credencial_tipo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_entregar_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_entregar_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_operaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_operaciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barra_usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barra_usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DFEstampado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\44x44\estam_jaspeado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Entrega_list_45px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Entrega_list_45px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barra_flecha_abajo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barra_flecha_abajo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="compras_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\compras_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_credenciales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_credenciales.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_materiales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_materiales.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_propa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_propa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_plavanderia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_plavanderia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_sucursales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_sucursales.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_modificar_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_modificar_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reportes_58x58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reportes_58x58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

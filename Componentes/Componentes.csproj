@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2093DE8-0D91-4BB4-9DCC-27263849890D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Componentes</RootNamespace>
+    <AssemblyName>Componentes</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArticuloColor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ArticuloColor.Designer.cs">
+      <DependentUpon>ArticuloColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelProceso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelProceso.Designer.cs">
+      <DependentUpon>PanelProceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloV5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ArticuloV5.Designer.cs">
+      <DependentUpon>ArticuloV5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloV4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ArticuloV4.Designer.cs">
+      <DependentUpon>ArticuloV4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloV3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ArticuloV3.Designer.cs">
+      <DependentUpon>ArticuloV3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloV2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ArticuloV2.Designer.cs">
+      <DependentUpon>ArticuloV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Articulo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Articulo.Designer.cs">
+      <DependentUpon>Articulo.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ArticuloColor.resx">
+      <DependentUpon>ArticuloColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelProceso.resx">
+      <DependentUpon>PanelProceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArticuloV5.resx">
+      <DependentUpon>ArticuloV5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArticuloV4.resx">
+      <DependentUpon>ArticuloV4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArticuloV3.resx">
+      <DependentUpon>ArticuloV3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArticuloV2.resx">
+      <DependentUpon>ArticuloV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articulo.resx">
+      <DependentUpon>Articulo.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavado-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_nueva_ropa_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colmostaza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sucursales 30x30-09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dispositivos30x30-05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fibras.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

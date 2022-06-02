@@ -1,0 +1,2016 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AAF4C869-7CBE-45ED-B4D6-F4CB71B776B0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PuntodeVentaTintoreria</RootNamespace>
+    <AssemblyName>PuntodeVentaTintoreria</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CreativaSL.LibControls.WinForms">
+      <HintPath>..\..\..\..\..\..\DLL\CreativaSL.LibControls.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClaseAux\ComprimirImagen.cs" />
+    <Compile Include="ClaseAux\EAN13.cs" />
+    <Compile Include="ClaseAux\EnvioCorreo.cs" />
+    <Compile Include="ClaseAux\EnvioMensaje.cs" />
+    <Compile Include="ClaseAux\Error.cs" />
+    <Compile Include="ClaseAux\EventArgsAux\DoWorkWaitEventArgs.cs" />
+    <Compile Include="ClaseAux\EventArgsAux\ProgressChangedWaitEventArgs.cs" />
+    <Compile Include="ClaseAux\EventArgsAux\RunWorkerCompletedWaitEventArgs.cs" />
+    <Compile Include="ClaseAux\HelperImgCID.cs" />
+    <Compile Include="ClaseAux\HelperTicketCID.cs" />
+    <Compile Include="ClaseAux\Impresor.cs" />
+    <Compile Include="ClaseAux\LogError.cs" />
+    <Compile Include="ClaseAux\RawPrinterHelper.cs" />
+    <Compile Include="ClaseAux\Recursos.cs" />
+    <Compile Include="ClaseAux\Remover.cs" />
+    <Compile Include="ClaseAux\Ticket_Impresion.cs" />
+    <Compile Include="ClaseAux\UtilFtp.cs" />
+    <Compile Include="ClaseAux\Validaciones.cs" />
+    <Compile Include="frmAArticuloBodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAArticuloBodega.designer.cs">
+      <DependentUpon>frmAArticuloBodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmACConversion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmACConversion.designer.cs">
+      <DependentUpon>FrmACConversion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmACPrecioXTipoEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmACPrecioXTipoEntrega.designer.cs">
+      <DependentUpon>FrmACPrecioXTipoEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmACRopa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmACRopa.designer.cs">
+      <DependentUpon>FrmACRopa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmACSubTipoRopa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmACSubTipoRopa.designer.cs">
+      <DependentUpon>FrmACSubTipoRopa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlmacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlmacen.designer.cs">
+      <DependentUpon>frmAlmacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAplicarBodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAplicarBodega.designer.cs">
+      <DependentUpon>frmAplicarBodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseControles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseControles.Designer.cs">
+      <DependentUpon>frmBaseControles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBodega.Designer.cs">
+      <DependentUpon>frmBodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCambiarFechaTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCambiarFechaTicket.designer.cs">
+      <DependentUpon>FrmCambiarFechaTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCambiarUbicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambiarUbicacion.designer.cs">
+      <DependentUpon>frmCambiarUbicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmColorRopa_Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmColorRopa_Cat.designer.cs">
+      <DependentUpon>frmColorRopa_Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompras.designer.cs">
+      <DependentUpon>frmCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComprasGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComprasGrid.designer.cs">
+      <DependentUpon>frmComprasGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComprasRecibidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComprasRecibidas.designer.cs">
+      <DependentUpon>frmComprasRecibidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfiguracion.designer.cs">
+      <DependentUpon>FrmConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConversionesIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConversionesIndex.designer.cs">
+      <DependentUpon>FrmConversionesIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCredenciales_Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCredenciales_Cat.designer.cs">
+      <DependentUpon>FrmCredenciales_Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosEmpresa_Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosEmpresa_Cat.designer.cs">
+      <DependentUpon>frmDatosEmpresa_Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDetalleTintoteriaRopa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDetalleTintoteriaRopa.designer.cs">
+      <DependentUpon>FrmDetalleTintoteriaRopa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDetalleTintoteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDetalleTintoteria.designer.cs">
+      <DependentUpon>FrmDetalleTintoteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocumentosPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocumentosPagos.designer.cs">
+      <DependentUpon>frmDocumentosPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocumentoXPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocumentoXPagar.designer.cs">
+      <DependentUpon>frmDocumentoXPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEspera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEspera.Designer.cs">
+      <DependentUpon>FrmEspera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFamilias_Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFamilias_Cat.designer.cs">
+      <DependentUpon>FrmFamilias_Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridEntregas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridEntregas.designer.cs">
+      <DependentUpon>frmGridEntregas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistorial.designer.cs">
+      <DependentUpon>frmHistorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistorialImportados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistorialImportados.Designer.cs">
+      <DependentUpon>frmHistorialImportados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportarExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportarExcel.designer.cs">
+      <DependentUpon>frmImportarExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMarca_Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMarca_Cat.designer.cs">
+      <DependentUpon>FrmMarca_Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMateriales_Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMateriales_Cat.designer.cs">
+      <DependentUpon>FrmMateriales_Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMembresìa_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMembresìa_Editar.designer.cs">
+      <DependentUpon>FrmMembresìa_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMotivo_Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMotivo_Cat.designer.cs">
+      <DependentUpon>FrmMotivo_Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevaPromocion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevaPromocion.designer.cs">
+      <DependentUpon>FrmNuevaPromocion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNueva_Familia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNueva_Familia.designer.cs">
+      <DependentUpon>FrmNueva_Familia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNueva_Marca_Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNueva_Marca_Cat.designer.cs">
+      <DependentUpon>FrmNueva_Marca_Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNueva_Sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNueva_Sucursal.designer.cs">
+      <DependentUpon>FrmNueva_Sucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNueva_UnidadMedida_Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNueva_UnidadMedida_Cat.designer.cs">
+      <DependentUpon>FrmNueva_UnidadMedida_Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevoColor_Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevoColor_Cat.designer.cs">
+      <DependentUpon>frmNuevoColor_Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevoMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevoMaterial.Designer.cs">
+      <DependentUpon>FrmNuevoMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevoSimboloTextil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevoSimboloTextil.designer.cs">
+      <DependentUpon>FrmNuevoSimboloTextil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevoTipoEstampado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevoTipoEstampado.designer.cs">
+      <DependentUpon>FrmNuevoTipoEstampado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevoTipoFibra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevoTipoFibra.designer.cs">
+      <DependentUpon>FrmNuevoTipoFibra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevoTipoSimboloTextil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevoTipoSimboloTextil.designer.cs">
+      <DependentUpon>FrmNuevoTipoSimboloTextil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevo_Equipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevo_Equipo.designer.cs">
+      <DependentUpon>FrmNuevo_Equipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevoTipoRopa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevoTipoRopa.designer.cs">
+      <DependentUpon>FrmNuevoTipoRopa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevo_Motivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevo_Motivo.designer.cs">
+      <DependentUpon>FrmNuevo_Motivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevo_Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevo_Producto.designer.cs">
+      <DependentUpon>FrmNuevo_Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrecioXTipoEntregaIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrecioXTipoEntregaIndex.designer.cs">
+      <DependentUpon>FrmPrecioXTipoEntregaIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductoImagen_Grid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductoImagen_Grid.designer.cs">
+      <DependentUpon>frmProductoImagen_Grid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductosImagenenDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductosImagenenDetalle.designer.cs">
+      <DependentUpon>frmProductosImagenenDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductosImagenes_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductosImagenes_Nuevo.designer.cs">
+      <DependentUpon>frmProductosImagenes_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductosRopa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductosRopa.designer.cs">
+      <DependentUpon>FrmProductosRopa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductos_Grid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductos_Grid.designer.cs">
+      <DependentUpon>FrmProductos_Grid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedores.designer.cs">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedores_Grid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedores_Grid.designer.cs">
+      <DependentUpon>frmProveedores_Grid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteEan13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteEan13.designer.cs">
+      <DependentUpon>frmReporteEan13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonitorProceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonitorProceso.Designer.cs">
+      <DependentUpon>frmMonitorProceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRopaIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRopaIndex.designer.cs">
+      <DependentUpon>FrmRopaIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSimboloTextil_Grid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSimboloTextil_Grid.designer.cs">
+      <DependentUpon>FrmSimboloTextil_Grid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockAgregar.designer.cs">
+      <DependentUpon>frmStockAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockQuitar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockQuitar.designer.cs">
+      <DependentUpon>frmStockQuitar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEquipo_Grid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEquipo_Grid.designer.cs">
+      <DependentUpon>FrmEquipo_Grid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSubTipoRopaIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSubTipoRopaIndex.designer.cs">
+      <DependentUpon>FrmSubTipoRopaIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTipoEstampado_Grid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTipoEstampado_Grid.designer.cs">
+      <DependentUpon>FrmTipoEstampado_Grid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTipoFibra_Grid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTipoFibra_Grid.designer.cs">
+      <DependentUpon>FrmTipoFibra_Grid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTipoRopa_Grid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTipoRopa_Grid.designer.cs">
+      <DependentUpon>FrmTipoRopa_Grid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSucursales_Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSucursales_Cat.designer.cs">
+      <DependentUpon>FrmSucursales_Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTipoSimboloTextil_Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTipoSimboloTextil_Cat.designer.cs">
+      <DependentUpon>FrmTipoSimboloTextil_Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnidadMedida_Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnidadMedida_Cat.designer.cs">
+      <DependentUpon>FrmUnidadMedida_Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPromociones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPromociones.designer.cs">
+      <DependentUpon>FrmPromociones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CancelarVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CancelarVenta.Designer.cs">
+      <DependentUpon>frm_CancelarVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Clientes.Designer.cs">
+      <DependentUpon>frm_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ClienteNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ClienteNuevo.Designer.cs">
+      <DependentUpon>frm_ClienteNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DetalleLavadoGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DetalleLavadoGrid.Designer.cs">
+      <DependentUpon>frm_DetalleLavadoGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DiasFestivosGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DiasFestivosGrid.Designer.cs">
+      <DependentUpon>frm_DiasFestivosGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EnvioDetalleGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EnvioDetalleGrid.Designer.cs">
+      <DependentUpon>frm_EnvioDetalleGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_LavadoGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_LavadoGrid.Designer.cs">
+      <DependentUpon>frm_LavadoGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NuevoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NuevoUsuario.Designer.cs">
+      <DependentUpon>frm_NuevoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ResumenVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ResumenVenta.designer.cs">
+      <DependentUpon>Frm_ResumenVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Reporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Reporte.designer.cs">
+      <DependentUpon>Frm_Reporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_GridEnvio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_GridEnvio.designer.cs">
+      <DependentUpon>Frm_GridEnvio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_GrupGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_GrupGrid.Designer.cs">
+      <DependentUpon>frm_GrupGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_GuardarEnvioV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_GuardarEnvioV.designer.cs">
+      <DependentUpon>Frm_GuardarEnvioV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MembresiasGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MembresiasGrid.Designer.cs">
+      <DependentUpon>frm_MembresiasGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_nuevaMembresia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_nuevaMembresia.Designer.cs">
+      <DependentUpon>frm_nuevaMembresia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NuevoDiaFestivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NuevoDiaFestivo.Designer.cs">
+      <DependentUpon>frm_NuevoDiaFestivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NuevoGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NuevoGrupo.Designer.cs">
+      <DependentUpon>frm_NuevoGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NuevoTiempoEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NuevoTiempoEntrega.Designer.cs">
+      <DependentUpon>frm_NuevoTiempoEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NuevoVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NuevoVehiculo.Designer.cs">
+      <DependentUpon>frm_NuevoVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PedidosPendiestesXfecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PedidosPendiestesXfecha.Designer.cs">
+      <DependentUpon>frm_PedidosPendiestesXfecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PedirChoferes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PedirChoferes.Designer.cs">
+      <DependentUpon>frm_PedirChoferes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PedirKilogramos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PedirKilogramos.Designer.cs">
+      <DependentUpon>frm_PedirKilogramos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PedirTipoVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PedirTipoVenta.Designer.cs">
+      <DependentUpon>frm_PedirTipoVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PedirOtrosCargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PedirOtrosCargos.Designer.cs">
+      <DependentUpon>frm_PedirOtrosCargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PedirTextoAbierto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PedirTextoAbierto.Designer.cs">
+      <DependentUpon>frm_PedirTextoAbierto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TiempoEntregaGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TiempoEntregaGrid.Designer.cs">
+      <DependentUpon>frm_TiempoEntregaGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TintoreriaDepositos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TintoreriaDepositos.Designer.cs">
+      <DependentUpon>frm_TintoreriaDepositos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TintoreriaRetiros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TintoreriaRetiros.Designer.cs">
+      <DependentUpon>frm_TintoreriaRetiros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_UsuarioGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_UsuarioGrid.Designer.cs">
+      <DependentUpon>Frm_UsuarioGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_VehiculoGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_VehiculoGrid.Designer.cs">
+      <DependentUpon>frm_VehiculoGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_VentaCancelacionNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_VentaCancelacionNuevo.Designer.cs">
+      <DependentUpon>frm_VentaCancelacionNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_VentaCancelaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_VentaCancelaciones.Designer.cs">
+      <DependentUpon>frm_VentaCancelaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_VentaCambioProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_VentaCambioProducto.Designer.cs">
+      <DependentUpon>frm_VentaCambioProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_VentaCambioNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_VentaCambioNuevo.Designer.cs">
+      <DependentUpon>frm_VentaCambioNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BuscarVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BuscarVenta.Designer.cs">
+      <DependentUpon>frm_BuscarVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_VentaCambios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_VentaCambios.Designer.cs">
+      <DependentUpon>frm_VentaCambios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginPermisos.Designer.cs">
+      <DependentUpon>frmLoginPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarTicket.Designer.cs">
+      <DependentUpon>frmBuscarTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleTicket.Designer.cs">
+      <DependentUpon>frmDetalleTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbrirCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbrirCaja.Designer.cs">
+      <DependentUpon>frmAbrirCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentaProductos.Designer.cs">
+      <DependentUpon>frmVentaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKilogramos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKilogramos.Designer.cs">
+      <DependentUpon>frmKilogramos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelDatosPrenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelDatosPrenda.Designer.cs">
+      <DependentUpon>frmSelDatosPrenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelSubTipoPrenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelSubTipoPrenda.Designer.cs">
+      <DependentUpon>frmSelSubTipoPrenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentaLavanderia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentaLavanderia.Designer.cs">
+      <DependentUpon>frmVentaLavanderia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentaTintoreria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentaTintoreria.Designer.cs">
+      <DependentUpon>frmVentaTintoreria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AsignarCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AsignarCaja.Designer.cs">
+      <DependentUpon>frm_AsignarCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DatosPagoTarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DatosPagoTarjeta.Designer.cs">
+      <DependentUpon>frm_DatosPagoTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Esperar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Esperar.Designer.cs">
+      <DependentUpon>frm_Esperar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DatosPagoTransferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DatosPagoTransferencia.Designer.cs">
+      <DependentUpon>frm_DatosPagoTransferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BuscarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BuscarCliente.Designer.cs">
+      <DependentUpon>frm_BuscarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Pagos.Designer.cs">
+      <DependentUpon>frm_Pagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_IngresarProductoGenerico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_IngresarProductoGenerico.Designer.cs">
+      <DependentUpon>frm_IngresarProductoGenerico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_IngresarDescuento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_IngresarDescuento.Designer.cs">
+      <DependentUpon>frm_IngresarDescuento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PedirCadenaTexto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PedirCadenaTexto.Designer.cs">
+      <DependentUpon>frm_PedirCadenaTexto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PedirCantidadProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PedirCantidadProducto.Designer.cs">
+      <DependentUpon>frm_PedirCantidadProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PedirAutorizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PedirAutorizacion.Designer.cs">
+      <DependentUpon>frm_PedirAutorizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PedirCodigoVale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PedirCodigoVale.Designer.cs">
+      <DependentUpon>frm_PedirCodigoVale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseGrid.Designer.cs">
+      <DependentUpon>frmBaseGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseDatos.Designer.cs">
+      <DependentUpon>frmBaseDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infraestructura\Extensiones\ControlCollectionToArray.cs" />
+    <Compile Include="Infraestructura\Helper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Content Include="Formatos\Ticket.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Properties\DataSources\TintoreriaGlobal.Caja.datasource" />
+    <None Include="Properties\DataSources\TintoreriaGlobal.DesgloseMovimientos.datasource" />
+    <None Include="Properties\DataSources\TintoreriaGlobal.Envio.datasource" />
+    <None Include="Resources\Iconos\44x44\estam_jaspeado.png" />
+    <None Include="Resources\Iconos\44x44\Fibras.png" />
+    <None Include="Resources\teams_50px.png" />
+    <None Include="Resources\edit_file_50px.png" />
+    <None Include="Resources\time.png" />
+    <None Include="Resources\washing_machine_58px.png" />
+    <None Include="Resources\product_58px.png" />
+    <None Include="Resources\Llegada_45px.png" />
+    <None Include="Resources\Entrega_list_45px.png" />
+    <None Include="Resources\atm_45px.png" />
+    <None Include="Resources\money_45px.png" />
+    <None Include="Resources\retiro_45px.png" />
+    <None Include="Resources\caja_llena_45px.png" />
+    <None Include="Resources\updates_45px.png" />
+    <None Include="Resources\water_58px.png" />
+    <None Include="Resources\save50px.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Formatos\CajaActual.rdlc" />
+    <EmbeddedResource Include="Formatos\CajaXDiaXSucursal.rdlc" />
+    <EmbeddedResource Include="Formatos\CajaXfechaXSucursal.rdlc" />
+    <EmbeddedResource Include="Formatos\GenerarEnvio.rdlc" />
+    <EmbeddedResource Include="Formatos\MovimientoActual.rdlc" />
+    <EmbeddedResource Include="Formatos\MovimientoCajaXFechaXSucursal.rdlc" />
+    <EmbeddedResource Include="frmAArticuloBodega.resx">
+      <DependentUpon>frmAArticuloBodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmACConversion.resx">
+      <DependentUpon>FrmACConversion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmACPrecioXTipoEntrega.resx">
+      <DependentUpon>FrmACPrecioXTipoEntrega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmACRopa.resx">
+      <DependentUpon>FrmACRopa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmACSubTipoRopa.resx">
+      <DependentUpon>FrmACSubTipoRopa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlmacen.resx">
+      <DependentUpon>frmAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAplicarBodega.resx">
+      <DependentUpon>frmAplicarBodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseControles.resx">
+      <DependentUpon>frmBaseControles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBodega.resx">
+      <DependentUpon>frmBodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCambiarFechaTicket.resx">
+      <DependentUpon>FrmCambiarFechaTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCambiarUbicacion.resx">
+      <DependentUpon>frmCambiarUbicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmColorRopa_Cat.resx">
+      <DependentUpon>frmColorRopa_Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompras.resx">
+      <DependentUpon>frmCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComprasGrid.resx">
+      <DependentUpon>frmComprasGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComprasRecibidas.resx">
+      <DependentUpon>frmComprasRecibidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfiguracion.resx">
+      <DependentUpon>FrmConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConversionesIndex.resx">
+      <DependentUpon>FrmConversionesIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCredenciales_Cat.resx">
+      <DependentUpon>FrmCredenciales_Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosEmpresa_Cat.resx">
+      <DependentUpon>frmDatosEmpresa_Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDetalleTintoteriaRopa.resx">
+      <DependentUpon>FrmDetalleTintoteriaRopa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDetalleTintoteria.resx">
+      <DependentUpon>FrmDetalleTintoteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDocumentosPagos.resx">
+      <DependentUpon>frmDocumentosPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDocumentoXPagar.resx">
+      <DependentUpon>frmDocumentoXPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEspera.resx">
+      <DependentUpon>FrmEspera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFamilias_Cat.resx">
+      <DependentUpon>FrmFamilias_Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridEntregas.resx">
+      <DependentUpon>frmGridEntregas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistorial.resx">
+      <DependentUpon>frmHistorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistorialImportados.resx">
+      <DependentUpon>frmHistorialImportados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportarExcel.resx">
+      <DependentUpon>frmImportarExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMarca_Cat.resx">
+      <DependentUpon>FrmMarca_Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMateriales_Cat.resx">
+      <DependentUpon>FrmMateriales_Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMembresìa_Editar.resx">
+      <DependentUpon>FrmMembresìa_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMotivo_Cat.resx">
+      <DependentUpon>FrmMotivo_Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevaPromocion.resx">
+      <DependentUpon>FrmNuevaPromocion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNueva_Familia.resx">
+      <DependentUpon>FrmNueva_Familia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNueva_Marca_Cat.resx">
+      <DependentUpon>FrmNueva_Marca_Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNueva_Sucursal.resx">
+      <DependentUpon>FrmNueva_Sucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNueva_UnidadMedida_Cat.resx">
+      <DependentUpon>FrmNueva_UnidadMedida_Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoColor_Cat.resx">
+      <DependentUpon>frmNuevoColor_Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevoMaterial.resx">
+      <DependentUpon>FrmNuevoMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevoSimboloTextil.resx">
+      <DependentUpon>FrmNuevoSimboloTextil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevoTipoEstampado.resx">
+      <DependentUpon>FrmNuevoTipoEstampado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevoTipoFibra.resx">
+      <DependentUpon>FrmNuevoTipoFibra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevoTipoSimboloTextil.resx">
+      <DependentUpon>FrmNuevoTipoSimboloTextil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevo_Equipo.resx">
+      <DependentUpon>FrmNuevo_Equipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevoTipoRopa.resx">
+      <DependentUpon>FrmNuevoTipoRopa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevo_Motivo.resx">
+      <DependentUpon>FrmNuevo_Motivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevo_Producto.resx">
+      <DependentUpon>FrmNuevo_Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrecioXTipoEntregaIndex.resx">
+      <DependentUpon>FrmPrecioXTipoEntregaIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductoImagen_Grid.resx">
+      <DependentUpon>frmProductoImagen_Grid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductosImagenenDetalle.resx">
+      <DependentUpon>frmProductosImagenenDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductosImagenes_Nuevo.resx">
+      <DependentUpon>frmProductosImagenes_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductosRopa.resx">
+      <DependentUpon>FrmProductosRopa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductos_Grid.resx">
+      <DependentUpon>FrmProductos_Grid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedores.resx">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedores_Grid.resx">
+      <DependentUpon>frmProveedores_Grid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteEan13.resx">
+      <DependentUpon>frmReporteEan13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonitorProceso.resx">
+      <DependentUpon>frmMonitorProceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRopaIndex.resx">
+      <DependentUpon>FrmRopaIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSimboloTextil_Grid.resx">
+      <DependentUpon>FrmSimboloTextil_Grid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockAgregar.resx">
+      <DependentUpon>frmStockAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockQuitar.resx">
+      <DependentUpon>frmStockQuitar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEquipo_Grid.resx">
+      <DependentUpon>FrmEquipo_Grid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSubTipoRopaIndex.resx">
+      <DependentUpon>FrmSubTipoRopaIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTipoEstampado_Grid.resx">
+      <DependentUpon>FrmTipoEstampado_Grid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTipoFibra_Grid.resx">
+      <DependentUpon>FrmTipoFibra_Grid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTipoRopa_Grid.resx">
+      <DependentUpon>FrmTipoRopa_Grid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSucursales_Cat.resx">
+      <DependentUpon>FrmSucursales_Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTipoSimboloTextil_Cat.resx">
+      <DependentUpon>FrmTipoSimboloTextil_Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnidadMedida_Cat.resx">
+      <DependentUpon>FrmUnidadMedida_Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPromociones.resx">
+      <DependentUpon>FrmPromociones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CancelarVenta.resx">
+      <DependentUpon>frm_CancelarVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Clientes.resx">
+      <DependentUpon>frm_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ClienteNuevo.resx">
+      <DependentUpon>frm_ClienteNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DetalleLavadoGrid.resx">
+      <DependentUpon>frm_DetalleLavadoGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DiasFestivosGrid.resx">
+      <DependentUpon>frm_DiasFestivosGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EnvioDetalleGrid.resx">
+      <DependentUpon>frm_EnvioDetalleGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_LavadoGrid.resx">
+      <DependentUpon>frm_LavadoGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NuevoUsuario.resx">
+      <DependentUpon>frm_NuevoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ResumenVenta.resx">
+      <DependentUpon>Frm_ResumenVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Reporte.resx">
+      <DependentUpon>Frm_Reporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_GridEnvio.resx">
+      <DependentUpon>Frm_GridEnvio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_GrupGrid.resx">
+      <DependentUpon>frm_GrupGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_GuardarEnvioV.resx">
+      <DependentUpon>Frm_GuardarEnvioV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MembresiasGrid.resx">
+      <DependentUpon>frm_MembresiasGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_nuevaMembresia.resx">
+      <DependentUpon>frm_nuevaMembresia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NuevoDiaFestivo.resx">
+      <DependentUpon>frm_NuevoDiaFestivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NuevoGrupo.resx">
+      <DependentUpon>frm_NuevoGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NuevoTiempoEntrega.resx">
+      <DependentUpon>frm_NuevoTiempoEntrega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NuevoVehiculo.resx">
+      <DependentUpon>frm_NuevoVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PedidosPendiestesXfecha.resx">
+      <DependentUpon>frm_PedidosPendiestesXfecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PedirChoferes.resx">
+      <DependentUpon>frm_PedirChoferes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PedirKilogramos.resx">
+      <DependentUpon>frm_PedirKilogramos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PedirTipoVenta.resx">
+      <DependentUpon>frm_PedirTipoVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PedirOtrosCargos.resx">
+      <DependentUpon>frm_PedirOtrosCargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PedirTextoAbierto.resx">
+      <DependentUpon>frm_PedirTextoAbierto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TiempoEntregaGrid.resx">
+      <DependentUpon>frm_TiempoEntregaGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TintoreriaDepositos.resx">
+      <DependentUpon>frm_TintoreriaDepositos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TintoreriaRetiros.resx">
+      <DependentUpon>frm_TintoreriaRetiros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_UsuarioGrid.resx">
+      <DependentUpon>Frm_UsuarioGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_VehiculoGrid.resx">
+      <DependentUpon>frm_VehiculoGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_VentaCancelacionNuevo.resx">
+      <DependentUpon>frm_VentaCancelacionNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_VentaCancelaciones.resx">
+      <DependentUpon>frm_VentaCancelaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_VentaCambioProducto.resx">
+      <DependentUpon>frm_VentaCambioProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_VentaCambioNuevo.resx">
+      <DependentUpon>frm_VentaCambioNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BuscarVenta.resx">
+      <DependentUpon>frm_BuscarVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_VentaCambios.resx">
+      <DependentUpon>frm_VentaCambios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginPermisos.resx">
+      <DependentUpon>frmLoginPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarTicket.resx">
+      <DependentUpon>frmBuscarTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleTicket.resx">
+      <DependentUpon>frmDetalleTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbrirCaja.resx">
+      <DependentUpon>frmAbrirCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentaProductos.resx">
+      <DependentUpon>frmVentaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKilogramos.resx">
+      <DependentUpon>frmKilogramos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelDatosPrenda.resx">
+      <DependentUpon>frmSelDatosPrenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelSubTipoPrenda.resx">
+      <DependentUpon>frmSelSubTipoPrenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentaLavanderia.resx">
+      <DependentUpon>frmVentaLavanderia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentaTintoreria.resx">
+      <DependentUpon>frmVentaTintoreria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AsignarCaja.resx">
+      <DependentUpon>frm_AsignarCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DatosPagoTarjeta.resx">
+      <DependentUpon>frm_DatosPagoTarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Esperar.resx">
+      <DependentUpon>frm_Esperar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DatosPagoTransferencia.resx">
+      <DependentUpon>frm_DatosPagoTransferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BuscarCliente.resx">
+      <DependentUpon>frm_BuscarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Pagos.resx">
+      <DependentUpon>frm_Pagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_IngresarProductoGenerico.resx">
+      <DependentUpon>frm_IngresarProductoGenerico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_IngresarDescuento.resx">
+      <DependentUpon>frm_IngresarDescuento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PedirCadenaTexto.resx">
+      <DependentUpon>frm_PedirCadenaTexto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PedirCantidadProducto.resx">
+      <DependentUpon>frm_PedirCantidadProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PedirAutorizacion.resx">
+      <DependentUpon>frm_PedirAutorizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PedirCodigoVale.resx">
+      <DependentUpon>frm_PedirCodigoVale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseGrid.resx">
+      <DependentUpon>frmBaseGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseDatos.resx">
+      <DependentUpon>frmBaseDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\TintoreriaGlobal.TicketDetalle.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\30x30\.DS_Store" />
+    <None Include="Resources\Iconos\30x30\._.DS_Store" />
+    <None Include="Resources\Iconos\32x32\.DS_Store" />
+    <None Include="Resources\Iconos\32x32\._.DS_Store" />
+    <None Include="Resources\Iconos\32x32\blanquedo 32x32\.DS_Store" />
+    <None Include="Resources\Iconos\32x32\blanquedo 32x32\._.DS_Store" />
+    <None Include="Resources\Iconos\32x32\lavado 32x32\._lavado.ai" />
+    <None Include="Resources\Iconos\32x32\limpieza en seco  32x32\.DS_Store" />
+    <None Include="Resources\Iconos\32x32\limpieza en seco  32x32\._.DS_Store" />
+    <None Include="Resources\Iconos\32x32\planchado 32x32\.DS_Store" />
+    <None Include="Resources\Iconos\32x32\planchado 32x32\._.DS_Store" />
+    <None Include="Resources\Iconos\32x32\secado 32x32\.DS_Store" />
+    <None Include="Resources\Iconos\32x32\secado 32x32\._.DS_Store" />
+    <None Include="Resources\Iconos\44x44\.DS_Store" />
+    <None Include="Resources\Iconos\44x44\._.DS_Store" />
+    <None Include="Resources\Iconos\44x44_2\.DS_Store" />
+    <None Include="Resources\Iconos\44x44_2\._.DS_Store" />
+    <None Include="Resources\Iconos\58x58\.DS_Store" />
+    <None Include="Resources\Iconos\58x58\._.DS_Store" />
+    <None Include="Resources\icon_guardar_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_retiros_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_abrir_caja_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_activar_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_caja_actual_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_codigo_barra_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_depositos_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_entregar_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_entregar_58x581.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_enviar_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_listo_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_mov_caja_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_nueva_ropa_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_nuevo_producto_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_pagos_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_pagos_58x581.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_procesar_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_reactivar_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_recibir_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_retirar_caja_llena_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_sucursal_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_suspender_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacen_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\articulos_bodega_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra_alerta_mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra_alerta_mini_amarilla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra_catalogos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra_configuracion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra_flecha_abajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra_inventario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra_movil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra_operaciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra_stock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra_usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_agregar_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_aplicar_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_buscar_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_cancelar_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_des_generico_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_detalle_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_eliminar_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_exportar_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_importar_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_imprimir_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_mayoreo_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_menos_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_modificar_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_pendiente_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_prod_generico_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cambios_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelaciones_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_colores_ropa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_correo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_credencial_resetear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_credencial_tipo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_credenciales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_empresa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_equipos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_familias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_iva.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_marca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_materiales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_motivos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_ocupaciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_secciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_sucursales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_tallas_ropa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_unidades_medida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientes_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compras_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cortes_caja_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documentos_pagar_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Search-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Shopping Bag-58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_catalogos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_cerrar_sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_configuracion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_inventario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_operaciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_promociones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\not-alerta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\not-ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\operaciones_blanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pedidos_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prodictos_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\promociones_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proveedores_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resultados_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top_cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top_maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top_menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top_minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuarios_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventas_58x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo150X150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_procesar_58x58B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_motivosB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientes_58x58B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compras_58x58B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_entregar_58x58B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_cerrarsesionB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_credencialesB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_listo_44x44B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Prendas\Playera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regresar_48px.png" />
+    <None Include="Resources\lavanderia_reparto.png" />
+    <None Include="Resources\icono_ptintoreria.png" />
+    <None Include="Resources\icono_propa.png" />
+    <None Include="Resources\icono_productos.png" />
+    <None Include="Resources\icono_plavanderia.png" />
+    <None Include="Resources\icono_otroscargos.png" />
+    <None Include="Resources\StatusGreen_32px.png" />
+    <None Include="Resources\StatusRed_32px.png" />
+    <None Include="Resources\GLOBES_GREEN.png" />
+    <None Include="Resources\develop.gif" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\closeBlack.png" />
+    <None Include="Resources\cancelacion_40px.png" />
+    <None Include="Resources\delete_fILE_48px.png" />
+    <Content Include="Resources\Estatus\GLOBES_BLACK.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Estatus\GLOBES_BLUE.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Estatus\GLOBES_GREEN.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Estatus\GLOBES_GREY.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Estatus\GLOBES_ORANGE.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Estatus\GLOBES_RED.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Estatus\GLOBES_YELLOW.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Iconos\30x30\._30x30 opciones-01.png" />
+    <Content Include="Resources\Iconos\30x30\._catálogos30x30-03.png" />
+    <Content Include="Resources\Iconos\30x30\._datos_empresa30x30-07.png" />
+    <Content Include="Resources\Iconos\30x30\._equipos 30x30-10.png" />
+    <Content Include="Resources\Iconos\30x30\._otros_cargos 30x30-29.png" />
+    <Content Include="Resources\Iconos\30x30\._reportes30x30-06.png" />
+    <Content Include="Resources\Iconos\30x30\._sucursales 30x30-09.png" />
+    <Content Include="Resources\Iconos\30x30\._sutipo_ropa 30x30-23.png" />
+    <Content Include="Resources\Iconos\30x30\._tipo de fibra 30x30-13.png" />
+    <Content Include="Resources\Iconos\30x30\._tipo_servicio 30x30-31.png" />
+    <Content Include="Resources\Iconos\30x30\._unidad_medida 30x30-25.png" />
+    <Content Include="Resources\Iconos\30x30\30x30 opciones-01.png" />
+    <Content Include="Resources\Iconos\30x30\catálogos30x30-03.png" />
+    <Content Include="Resources\Iconos\30x30\color_ropa30x30-08.png" />
+    <Content Include="Resources\Iconos\30x30\configuración 30x30-04.png" />
+    <Content Include="Resources\Iconos\30x30\datos_empresa30x30-07.png" />
+    <Content Include="Resources\Iconos\30x30\defectos 30x30-22.png" />
+    <Content Include="Resources\Iconos\30x30\dias festivos 30x30-12.png" />
+    <Content Include="Resources\Iconos\30x30\dispositivos30x30-05.png" />
+    <Content Include="Resources\Iconos\30x30\equipos 30x30-10.png" />
+    <Content Include="Resources\Iconos\30x30\familia 30x30-18.png" />
+    <Content Include="Resources\Iconos\30x30\horario 30x30-19.png" />
+    <Content Include="Resources\Iconos\30x30\inventario30x30-02.png" />
+    <Content Include="Resources\Iconos\30x30\marcas 30x30-26.png" />
+    <Content Include="Resources\Iconos\30x30\material 30x30-16.png" />
+    <Content Include="Resources\Iconos\30x30\membresia 30x30-24.png" />
+    <Content Include="Resources\Iconos\30x30\motivo_cancel 30x30-17.png" />
+    <Content Include="Resources\Iconos\30x30\otros_cargos 30x30-29.png" />
+    <Content Include="Resources\Iconos\30x30\reportes30x30-06.png" />
+    <Content Include="Resources\Iconos\30x30\servicio_textiles 30x30-20.png" />
+    <Content Include="Resources\Iconos\30x30\simbolo_textil 30x30-28.png" />
+    <Content Include="Resources\Iconos\30x30\sucursales 30x30-09.png" />
+    <Content Include="Resources\Iconos\30x30\sutipo_ropa 30x30-23.png" />
+    <Content Include="Resources\Iconos\30x30\tipo de fibra 30x30-13.png" />
+    <Content Include="Resources\Iconos\30x30\tipo de ropa 30x30-15.png" />
+    <Content Include="Resources\Iconos\30x30\tipos_estampado 30x30-21.png" />
+    <Content Include="Resources\Iconos\30x30\tipo_promociones 30x30-27.png" />
+    <Content Include="Resources\Iconos\30x30\tipo_servicio 30x30-31.png" />
+    <Content Include="Resources\Iconos\30x30\ubicación 30x30-11.png" />
+    <Content Include="Resources\Iconos\30x30\unidad_medida 30x30-25.png" />
+    <Content Include="Resources\Iconos\30x30\vehiculos 30x30-14.png" />
+    <Content Include="Resources\Iconos\32x32\._colgar 32x32-07.png" />
+    <Content Include="Resources\Iconos\32x32\._colgar escurra_sombra 32x32-10.png" />
+    <Content Include="Resources\Iconos\32x32\._no retorcer 32x32-13.png" />
+    <Content Include="Resources\Iconos\32x32\._no secar 32x32-04.png" />
+    <Content Include="Resources\Iconos\32x32\._secado_en frio 32x32-05.png" />
+    <Content Include="Resources\Iconos\32x32\._secar horizontal_sombra 32x32-12.png" />
+    <Content Include="Resources\Iconos\32x32\._secar_horizontal 32x32-11.png" />
+    <Content Include="Resources\Iconos\32x32\blanquedo 32x32\blanqueado -01.png" />
+    <Content Include="Resources\Iconos\32x32\blanquedo 32x32\blanqueado -02.png" />
+    <Content Include="Resources\Iconos\32x32\blanquedo 32x32\blanqueado -03.png" />
+    <Content Include="Resources\Iconos\32x32\blanquedo 32x32\blanqueado -04.png" />
+    <Content Include="Resources\Iconos\32x32\blanquedo 32x32\blanqueado -05.png" />
+    <Content Include="Resources\Iconos\32x32\colgar 32x32-07.png" />
+    <Content Include="Resources\Iconos\32x32\colgar escurra_sombra 32x32-10.png" />
+    <Content Include="Resources\Iconos\32x32\colgar_ escurra 32x32-09.png" />
+    <Content Include="Resources\Iconos\32x32\colgar_sombra 32x32-08.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\._lavado-01.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\._lavado-02.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\._lavado-03.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\._lavado-04.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\._lavado-05.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\._lavado-06.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\._lavado-07.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\._lavado-08.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\._lavado-09.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\lavado-01.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\lavado-02.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\lavado-03.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\lavado-04.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\lavado-05.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\lavado-06.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\lavado-07.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\lavado-08.png" />
+    <Content Include="Resources\Iconos\32x32\lavado 32x32\lavado-09.png" />
+    <Content Include="Resources\Iconos\32x32\limpieza en seco  32x32\._limpieza -11.png" />
+    <Content Include="Resources\Iconos\32x32\limpieza en seco  32x32\limpieza -01.png" />
+    <Content Include="Resources\Iconos\32x32\limpieza en seco  32x32\limpieza -02.png" />
+    <Content Include="Resources\Iconos\32x32\limpieza en seco  32x32\limpieza -03.png" />
+    <Content Include="Resources\Iconos\32x32\limpieza en seco  32x32\limpieza -04.png" />
+    <Content Include="Resources\Iconos\32x32\limpieza en seco  32x32\limpieza -05.png" />
+    <Content Include="Resources\Iconos\32x32\limpieza en seco  32x32\limpieza -06.png" />
+    <Content Include="Resources\Iconos\32x32\limpieza en seco  32x32\limpieza -07.png" />
+    <Content Include="Resources\Iconos\32x32\limpieza en seco  32x32\limpieza -08.png" />
+    <Content Include="Resources\Iconos\32x32\limpieza en seco  32x32\limpieza -09.png" />
+    <Content Include="Resources\Iconos\32x32\limpieza en seco  32x32\limpieza -10.png" />
+    <Content Include="Resources\Iconos\32x32\limpieza en seco  32x32\limpieza -11.png" />
+    <Content Include="Resources\Iconos\32x32\no retorcer 32x32-13.png" />
+    <Content Include="Resources\Iconos\32x32\no secar 32x32-04.png" />
+    <Content Include="Resources\Iconos\32x32\planchado 32x32\._planchado -01.png" />
+    <Content Include="Resources\Iconos\32x32\planchado 32x32\._planchado -02.png" />
+    <Content Include="Resources\Iconos\32x32\planchado 32x32\._planchado -03.png" />
+    <Content Include="Resources\Iconos\32x32\planchado 32x32\._planchado -04.png" />
+    <Content Include="Resources\Iconos\32x32\planchado 32x32\._planchado -05.png" />
+    <Content Include="Resources\Iconos\32x32\planchado 32x32\._planchado -06.png" />
+    <Content Include="Resources\Iconos\32x32\planchado 32x32\._planchado -07.png" />
+    <Content Include="Resources\Iconos\32x32\planchado 32x32\planchado -01.png" />
+    <Content Include="Resources\Iconos\32x32\planchado 32x32\planchado -02.png" />
+    <Content Include="Resources\Iconos\32x32\planchado 32x32\planchado -03.png" />
+    <Content Include="Resources\Iconos\32x32\planchado 32x32\planchado -04.png" />
+    <Content Include="Resources\Iconos\32x32\planchado 32x32\planchado -05.png" />
+    <Content Include="Resources\Iconos\32x32\planchado 32x32\planchado -06.png" />
+    <Content Include="Resources\Iconos\32x32\planchado 32x32\planchado -07.png" />
+    <Content Include="Resources\Iconos\32x32\planchado 32x32\planchado -08.png" />
+    <Content Include="Resources\Iconos\32x32\planchado 32x32\planchado -09.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\._colgar 32x32-07.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\._colgar escurra_sombra 32x32-10.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\._colgar_ escurra 32x32-09.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\._colgar_sombra 32x32-08.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\._no retorcer 32x32-13.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\._no secar 32x32-04.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\._secado frio_delicada 32x32-06.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\._secado_antiarrugas 32x32-02.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\._secado_delicada 32x32-03.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\._secado_en frio 32x32-05.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\._secado_maquina 32x32-01.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\._secar horizontal_sombra 32x32-12.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\._secar_horizontal 32x32-11.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\._temp_alta 32x32-16.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\._temp_baja 32x32-14.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\._temp_media 32x32-15.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\colgar 32x32-07.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\colgar escurra_sombra 32x32-10.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\colgar_ escurra 32x32-09.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\colgar_sombra 32x32-08.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no retorcer 32x32-13.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar 32x32-04.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar_maquina 32x32-01.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar_maquina 32x32-02.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar_maquina 32x32-03.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar_maquina 32x32-04.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar_maquina 32x32-05.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar_maquina 32x32-06.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar_maquina 32x32-07.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar_maquina 32x32-08.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar_maquina 32x32-09.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar_maquina 32x32-10.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar_maquina 32x32-11.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar_maquina 32x32-12.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar_maquina 32x32-13.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar_maquina 32x32-14.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar_maquina 32x32-15.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar_maquina 32x32-16.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\no secar_maquina 32x32-17.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\secado frio_delicada 32x32-06.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\secado_antiarrugas 32x32-02.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\secado_delicada 32x32-03.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\secado_en frio 32x32-05.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\secado_maquina 32x32-01.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\secar horizontal_sombra 32x32-12.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\secar_horizontal 32x32-11.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\temp_alta 32x32-16.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\temp_baja 32x32-14.png" />
+    <Content Include="Resources\Iconos\32x32\secado 32x32\temp_media 32x32-15.png" />
+    <Content Include="Resources\Iconos\32x32\secado frio_delicada 32x32-06.png" />
+    <Content Include="Resources\Iconos\32x32\secado_antiarrugas 32x32-02.png" />
+    <Content Include="Resources\Iconos\32x32\secado_delicada 32x32-03.png" />
+    <Content Include="Resources\Iconos\32x32\secado_en frio 32x32-05.png" />
+    <Content Include="Resources\Iconos\32x32\secado_maquina 32x32-01.png" />
+    <Content Include="Resources\Iconos\32x32\secar horizontal_sombra 32x32-12.png" />
+    <Content Include="Resources\Iconos\32x32\secar_horizontal 32x32-11.png" />
+    <Content Include="Resources\Iconos\32x32\temp_alta 32x32-16.png" />
+    <Content Include="Resources\Iconos\32x32\temp_baja 32x32-14.png" />
+    <Content Include="Resources\Iconos\32x32\temp_media 32x32-15.png" />
+    <Content Include="Resources\Iconos\44x44\._3x1 44x44-04.png" />
+    <Content Include="Resources\Iconos\44x44\2x1 44x44-03.png" />
+    <Content Include="Resources\Iconos\44x44\3x1 44x44-04.png" />
+    <Content Include="Resources\Iconos\44x44\Buscar44X44.png" />
+    <Content Include="Resources\Iconos\44x44\cancelar 44x44-07.png" />
+    <Content Include="Resources\Iconos\44x44\comentarios 44x44-01.png" />
+    <Content Include="Resources\Iconos\44x44\descuentos 44x44-06.png" />
+    <Content Include="Resources\Iconos\44x44\icono_suma.png" />
+    <Content Include="Resources\Iconos\44x44\otros_cargos 44x44-02.png" />
+    <Content Include="Resources\Iconos\44x44\pendientes 44x44-09.png" />
+    <Content Include="Resources\Iconos\44x44\precios 44x44-05.png" />
+    <Content Include="Resources\Iconos\44x44\vender 44x44-08.png" />
+    <Content Include="Resources\Iconos\44x44_2\._blanqueado 44x44-03.png" />
+    <Content Include="Resources\Iconos\44x44_2\._lavado 44x44-01.png" />
+    <Content Include="Resources\Iconos\44x44_2\._limp_seco 44x44-04.png" />
+    <Content Include="Resources\Iconos\44x44_2\._planchado 44x44-05.png" />
+    <Content Include="Resources\Iconos\44x44_2\._secado 44x44-02.png" />
+    <Content Include="Resources\Iconos\44x44_2\blanqueado 44x44-03.png" />
+    <Content Include="Resources\Iconos\44x44_2\lavado 44x44-01.png" />
+    <Content Include="Resources\Iconos\44x44_2\limp_seco 44x44-04.png" />
+    <Content Include="Resources\Iconos\44x44_2\planchado 44x44-05.png" />
+    <Content Include="Resources\Iconos\44x44_2\secado 44x44-02.png" />
+    <Content Include="Resources\Iconos\58x58\._descargar_actualizacion-09.png" />
+    <Content Include="Resources\Iconos\58x58\._lavanderia-05.png" />
+    <Content Include="Resources\Iconos\58x58\._lavanderia_kg-02.png" />
+    <Content Include="Resources\Iconos\58x58\._ticket-01.png" />
+    <Content Include="Resources\Iconos\58x58\._tiempos_entrega-08.png" />
+    <Content Include="Resources\Iconos\58x58\arreglos_costura-03.png" />
+    <Content Include="Resources\Iconos\58x58\descargar_actualizacion-09.png" />
+    <Content Include="Resources\Iconos\58x58\empleados-07.png" />
+    <Content Include="Resources\Iconos\58x58\lavanderia-05.png" />
+    <Content Include="Resources\Iconos\58x58\lavanderia_kg-02.png" />
+    <Content Include="Resources\Iconos\58x58\planchado-04.png" />
+    <Content Include="Resources\Iconos\58x58\ticket-01.png" />
+    <Content Include="Resources\Iconos\58x58\tiempos_entrega-08.png" />
+    <Content Include="Resources\Iconos\58x58\uso de productos-06.png" />
+    <Content Include="Resources\Iconos\58x58_2\._05-incremento.png" />
+    <Content Include="Resources\Iconos\58x58_2\._cantidad-01.png" />
+    <Content Include="Resources\Iconos\58x58_2\05-incremento.png" />
+    <Content Include="Resources\Iconos\58x58_2\06-decremento.png" />
+    <Content Include="Resources\Iconos\58x58_2\cantidad-01.png" />
+    <Content Include="Resources\Iconos\58x58_2\cantidad-02.png" />
+    <Content Include="Resources\Iconos\58x58_2\eliminar-03.png" />
+    <Content Include="Resources\Iconos\58x58_2\reproceso-04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CtrlReportes\" />
+    <Folder Include="Resources\Empresas\" />
+    <Folder Include="Resources\temporal\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BetterComboBox\BetterComboBox.csproj">
+      <Project>{1577b938-31d0-44c8-ab05-991f5673f89c}</Project>
+      <Name>BetterComboBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Componentes\Componentes.csproj">
+      <Project>{a2093de8-0d91-4bb4-9dcc-27263849890d}</Project>
+      <Name>Componentes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TintoreriaGlobal\TintoreriaGlobal.csproj">
+      <Project>{7f4b82ff-769b-47f2-9293-83aca362a130}</Project>
+      <Name>TintoreriaGlobal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TintoreriaNegocio\TintoreriaNegocio.csproj">
+      <Project>{9f8d1d14-bce3-4e79-b853-3a3eab0f8928}</Project>
+      <Name>TintoreriaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
